@@ -1,6 +1,9 @@
 import unittest
+from pathlib import Path
+import tempfile
+from unittest.mock import patch
 
-from arxiv_once import parse_feed
+from arxiv_once import parse_feed, run
 
 
 class FeedChecks(unittest.TestCase):
@@ -26,3 +29,14 @@ class FeedChecks(unittest.TestCase):
             </feed>'''
         with self.assertRaisesRegex(ValueError, 'API error'):
             parse_feed(feed)
+
+    def test_nonzero_total_with_empty_page_writes_no_success_output(self):
+        raw = b'''<feed xmlns="http://www.w3.org/2005/Atom"
+            xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+            <opensearch:totalResults>1</opensearch:totalResults></feed>'''
+        with tempfile.TemporaryDirectory() as directory, patch('arxiv_once.urlopen') as remote:
+            remote.return_value.__enter__.return_value.read.return_value = raw
+            target = Path(directory) / 'result'
+            with self.assertRaisesRegex(ValueError, 'Inconsistent count'):
+                run('ti:fixture', target)
+            self.assertFalse(target.exists())

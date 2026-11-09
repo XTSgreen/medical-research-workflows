@@ -40,8 +40,8 @@ def parse_feed(raw):
             'journal_reference': entry.findtext(ARXIV + 'journal_ref'),
             'peer_review_status': 'Not independently established by this metadata exercise.',
         })
-    if not len(records) <= min(total, 5):
-        raise ValueError('Inconsistent count or more than the requested five entries')
+    if len(records) != min(total, 5):
+        raise ValueError('Inconsistent count for start=0 and max_results=5')
     return total, records
 
 
