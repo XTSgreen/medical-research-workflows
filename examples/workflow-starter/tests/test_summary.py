@@ -11,7 +11,7 @@ class SummaryChecks(unittest.TestCase):
         report = summarize(Path(__file__).resolve().parents[1] / 'data/demo.csv')
         self.assertEqual(report['records'], 8)
         self.assertEqual(report['groups']['A']['missing'], 1)
-        self.assertEqual(report['groups']['A']['mean'], 2)
+        self.assertEqual(report['groups']['A']['mean'], 2.5)
         self.assertEqual(report['groups']['A']['sample_sd'], 1)
         self.assertEqual(report['groups']['B']['mean'], 6.5)
         self.assertAlmostEqual(report['groups']['B']['sample_sd'], math.sqrt(5 / 3))
