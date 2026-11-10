@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "direction": "Clinical prediction methods",
+  "focusTerms": ["clinical", "prediction"],
+  "mode": "local",
+  "maxRecords": 20,
+  "lookbackDays": 7,
+  "email": "your_email@example.org",
+  "subscriptions": [
+    {"id": "clinical-arxiv", "source": "arxiv", "query": "ti:prediction AND all:clinical"},
+    {"id": "clinical-pubmed", "source": "pubmed", "query": "clinical prediction model[Title/Abstract]"}
+  ]
+}
