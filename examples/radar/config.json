@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "direction": "睡眠与疲劳的观察性研究和计算方法",
+  "focusTerms": ["sleep", "fatigue"],
+  "mode": "local",
+  "email": "replace-with-your-contact@example.org",
+  "maxRecords": 100,
+  "lookbackDays": 3,
+  "subscriptions": [
+    { "id": "pubmed-sleep", "source": "pubmed", "query": "sleep AND fatigue" },
+    { "id": "arxiv-sleep", "source": "arxiv", "query": "all:sleep" },
+    { "id": "biorxiv-sleep", "source": "biorxiv", "terms": ["sleep", "fatigue"], "category": "neuroscience" }
+  ]
+}

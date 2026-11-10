@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "title": "原创教学记录，不是真实研究",
+  "records": [
+    { "id": "sample", "text": "This fictional teaching study included 80 adults in an observational cohort." },
+    { "id": "result", "text": "The fictional estimate was -0.4 points, with a 95% CI from -0.7 to -0.1 points. Fig. 1 presents this teaching result." },
+    { "id": "limits", "text": "The fictional single-site observational design may be subject to residual confounding." }
+  ]
+}

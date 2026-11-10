@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "direction": "睡眠研究的文献发现演示",
+  "focusTerms": ["sleep"],
+  "mode": "local",
+  "maxRecords": 10,
+  "lookbackDays": 2,
+  "subscriptions": [{ "id": "arxiv-sleep-demo", "source": "arxiv", "query": "all:sleep" }]
+}

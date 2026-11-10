@@ -1,0 +1,38 @@
+{
+  "name": "dsh-review-copilot",
+  "version": "0.1.4",
+  "description": "Evidence-aware reviewer response workspace",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "bin": {
+    "review-copilot": "./cli.js"
+  },
+  "exports": {
+    ".": "./src/review.js",
+    "./model": "./src/model.js",
+    "./prompts": "./src/prompts.js",
+    "./dsh": "./src/dsh.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./dsh/locale/*.json": "./locale/*.json",
+    "./dsh/icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src",
+    "cli.js",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg"
+  ]
+}

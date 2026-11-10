@@ -1,0 +1,11 @@
+participant_id,group,score,before,after,sleep_hours,fatigue,event
+P01,A,8,10,8,6,7,yes
+P02,A,10,12,9,7,6,no
+P03,A,12,14,13,8,3,no
+P04,A,9,11,9,5,8,yes
+P05,A,11,13,10,7.5,4,no
+P06,B,14,16,12,6.5,6,no
+P07,B,15,18,15,8.5,2,no
+P08,B,13,15,13,5.5,7,yes
+P09,B,16,17,14,9,1,no
+P10,B,NA,14,12,NA,5,yes

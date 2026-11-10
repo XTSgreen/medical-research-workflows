@@ -1,0 +1,41 @@
+{
+  "name": "dsh-paper-autopsy",
+  "version": "0.1.3",
+  "description": "PDF reading cards with page-anchored evidence and bibliographic checks",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "bin": {
+    "paper-autopsy": "./cli.js"
+  },
+  "exports": {
+    ".": "./src/autopsy.js",
+    "./pdf": "./src/pdf.js",
+    "./references": "./src/references.js",
+    "./dsh": "./src/dsh.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./dsh/locale/*.json": "./locale/*.json",
+    "./dsh/icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src",
+    "cli.js",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg"
+  ],
+  "dependencies": {
+    "pdfjs-dist": "6.5.438"
+  }
+}

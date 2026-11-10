@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "question": "原创虚构教学数据中A减B的平均score差是多少？",
+  "method": "welch",
+  "design": "independent",
+  "id_column": "participant_id",
+  "columns": {"group": "group", "value": "score"},
+  "groups": ["A", "B"],
+  "units": {"score": "points"},
+  "missing_tokens": ["", "NA", "NaN"],
+  "missing_policy": "complete-case",
+  "confidence_level": 0.95,
+  "analysis_role": "single-primary",
+  "rationale": "教学演示：两组连续测量均值比较，不假设两组方差相等；并非真实医学研究。",
+  "assumptions": ["每个虚构ID代表独立个体，一人一行", "均值t推断的分布与异常点适用性由操作者结合实际研究核查；本例只为教学"],
+  "multiplicity_note": "此文件单独演示一个检验，四份示例不能同时当作同一研究预注册的单一主要分析。"
+}

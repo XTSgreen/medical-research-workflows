@@ -1,0 +1,7 @@
+Reviewer 1
+1. Please clarify how missing values were handled in the statistical analysis.
+2. Please add an external validation cohort and discuss transportability.
+
+Reviewer 2
+Comment 1: The abbreviation CI should be defined on first use.
+Comment 2: Please explain whether the observed association supports a causal interpretation.

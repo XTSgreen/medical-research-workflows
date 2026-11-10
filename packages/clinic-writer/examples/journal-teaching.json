@@ -1,0 +1,11 @@
+{
+  "name": "教学期刊规则示例，非真实投稿指南",
+  "url": "https://example.org/teaching-author-guide",
+  "retrievedAt": "2026-11-10",
+  "sourceText": "Fictional teaching rules only. Use past tense for completed methods. Define abbreviations on first use. Refer to illustrations as Figure followed by the number.",
+  "rules": [
+    { "id": "T1", "type": "tense", "value": "past", "quote": "Use past tense for completed methods." },
+    { "id": "A1", "type": "abbreviation", "short": "CI", "long": "confidence interval", "quote": "Define abbreviations on first use." },
+    { "id": "F1", "type": "figure-label", "value": "Figure", "quote": "Refer to illustrations as Figure followed by the number." }
+  ]
+}

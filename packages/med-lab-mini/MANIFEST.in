@@ -1,0 +1,3 @@
+include requirements-tested.txt
+include LICENSE
+include README.md

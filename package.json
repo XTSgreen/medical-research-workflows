@@ -1,0 +1,19 @@
+{
+  "name": "hybrid-research-products",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "review": "node packages/review-copilot/cli.js",
+    "check:prompts": "node scripts/build-review-prompts.mjs --check",
+    "build:prompts": "node scripts/build-review-prompts.mjs",
+    "check:packages": "node scripts/check-packages.mjs"
+  }
+}

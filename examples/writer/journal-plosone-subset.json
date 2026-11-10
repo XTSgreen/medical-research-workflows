@@ -1,0 +1,12 @@
+{
+  "name": "PLOS One 部分语言格式规则（仅缩写与图表称谓）",
+  "url": "https://journals.plos.org/plosone/s/submission-guidelines",
+  "retrievedAt": "2026-11-10",
+  "sourceText": "Define abbreviations upon first appearance in the text.\n“Figure” abbreviated to “Fig”\nTables require a label",
+  "notes": "仅摘录与当前适配器有关的规则，不能据此宣称符合完整投稿指南；CI全称由使用者提供，不是指南指定的术语表。未发现通用时态规则，未添加。",
+  "rules": [
+    { "id": "PLOS-A1", "type": "abbreviation", "short": "CI", "long": "confidence interval", "quote": "Define abbreviations upon first appearance in the text." },
+    { "id": "PLOS-F1", "type": "figure-label", "value": "Fig", "quote": "“Figure” abbreviated to “Fig”" },
+    { "id": "PLOS-T1", "type": "table-label", "value": "Table", "quote": "Tables require a label" }
+  ]
+}

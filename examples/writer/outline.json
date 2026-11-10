@@ -1,0 +1,5 @@
+[
+  { "id": "methods", "title": "Methods", "requirements": "只描述本研究记录中实际完成的样本与分析流程，不把外部论文写成本研究过程。" },
+  { "id": "results", "title": "Results", "requirements": "根据实际结果记录起草，数值与单位保留原样，缺失结果明确留空。" },
+  { "id": "discussion", "title": "Discussion", "requirements": "比较已有文献并说明局限，解释与事实分开，不补造临床结论。" }
+]

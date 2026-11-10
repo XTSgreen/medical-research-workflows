@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "question": "虚构sleep_hours与fatigue的线性相关是多少？",
+  "method": "pearson",
+  "design": "independent",
+  "id_column": "participant_id",
+  "columns": {"x": "sleep_hours", "y": "fatigue"},
+  "units": {"sleep_hours": "hours", "fatigue": "points"},
+  "missing_tokens": ["", "NA", "NaN"],
+  "missing_policy": "complete-case",
+  "confidence_level": 0.95,
+  "analysis_role": "single-primary",
+  "rationale": "只衡量线性关联，使用双侧Pearson检验与Fisher-z区间，不声称因果。",
+  "assumptions": ["个体间独立，测量配对正确", "线性结构、异常点以及相关检验的分布条件需人工核查，不能自动套用于任意相关性"],
+  "multiplicity_note": "仅演示Pearson方法，实际多个变量探索需另行规定多重比较。"
+}

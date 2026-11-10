@@ -1,0 +1,41 @@
+{
+  "name": "dsh-literature-radar",
+  "version": "0.1.5",
+  "description": "PubMed, arXiv and bioRxiv literature monitoring with auditable daily reports",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "bin": {
+    "literature-radar": "./cli.js"
+  },
+  "exports": {
+    ".": "./src/radar.js",
+    "./sources": "./src/sources.js",
+    "./dsh": "./src/dsh.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./dsh/locale/*.json": "./locale/*.json",
+    "./dsh/icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "src",
+    "cli.js",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "examples"
+  ],
+  "dependencies": {
+    "fast-xml-parser": "5.12.0"
+  }
+}

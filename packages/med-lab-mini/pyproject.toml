@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "med-lab-mini"
+version = "0.1.1"
+description = "Locally reproducible exploratory statistics with explicit method approval"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26,<3", "scipy>=1.13,<2", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "mpmath>=1.3"]
+
+[project.scripts]
+med-lab = "med_lab_mini.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+med_lab_mini = ["examples/*.json", "examples/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

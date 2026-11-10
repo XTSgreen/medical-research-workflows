@@ -1,0 +1,13 @@
+# Windows example; replace all paths and copy the query config before enabling.
+# Owner must explicitly change enabled to true. This file does not enable a job.
+- id: research-literature-radar
+  config:
+    allowModelApi: false
+    job:
+      enabled: false
+      configFile: C:/research/radar/config.json
+      stateFile: C:/research/radar/state.json
+      reportDirectory: C:/research/radar/reports
+      intervalSeconds: 86400
+      retrySeconds: 300
+      sendToModel: false
